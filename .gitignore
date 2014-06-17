@@ -1,17 +1,4 @@
 .DS_Store
 *.gem
-/bootstrap/.sass-cache
-/bootstrap/bootstrap.css
-/bootstrap/bootstrap-responsive.css
-/bootstrap/Gemfile.lock
-/bootstrap/.rvmrc
-/bootstrap/.rbenv-version
-
-# Ignore bundler config
-/bootstrap/.bundle
-/bootstrap/vendor/cache
-/bootstrap/vendor/bundle
-/bootstrap/tmp/
-/bootstrap/test/screenshots/
-/bootstrap/test/dummy/log/*.log
-/bootstrap/test/
+**/.sass-cache
+**/.sass-cache/*

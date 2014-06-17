@@ -1,16 +1,91 @@
 <?php
 /**
+ *
  * BluehiveFramework functions and definitions
  *
  * @package BluehiveFramework
+ *
  */
+
+
+/**
+ *
+ * Set Proper Parent/Child theme paths for inclusion
+ *
+ **/
+	@define( 'PARENT_DIR', get_template_directory() );
+	@define( 'CHILD_DIR', get_stylesheet_directory() );
+
+	@define( 'PARENT_URL', get_template_directory_uri() );
+	@define( 'CHILD_URL', get_stylesheet_directory_uri() );
+
+	@define( 'CURRENT_THEME', getCurrentTheme() );
+	@define( 'BLUEHIVE_VER', bluehive_get_theme_version('BluehiveFramework') );
+
+
+/**
+*
+* JS global variables
+* - Originally from CherryFramework - https://github.com/CherryFramework/
+*
+**/
+	function bluehive_js_global_variables(){
+		$output = "<script>";
+		$output .="\n var system_folder = '".PARENT_URL."/admin/data_management/',";
+		$output .= "\n\t CHILD_URL ='" .CHILD_URL."',";
+		$output .= "\n\t PARENT_URL = '".PARENT_URL."', ";
+		$output .= "\n\t CURRENT_THEME = '".CURRENT_THEME."'";
+		$output .= "</script>";
+		echo $output;
+	}
+	add_action('wp_head', 'bluehive_js_global_variables');
+	add_action('admin_head', 'bluehive_js_global_variables');
+
+/**
+*
+* Definition current theme
+*
+**/				
+	function getCurrentTheme() {
+		if ( function_exists('wp_get_theme') ) {
+			$theme = wp_get_theme();
+			if ( $theme->exists() ) {
+				$theme_name = $theme->Name;
+			}
+		} else {
+			$theme_name = get_current_theme();
+		}
+		$theme_name = preg_replace("/\W/", "_", strtolower($theme_name) );
+		return $theme_name;
+	}
+
+/**
+*
+* Definition theme version
+* - Originally from CherryFramework - https://github.com/CherryFramework/
+*
+* @param string $theme_name Directory name for the theme
+*
+**/
+	function bluehive_get_theme_version($theme_name) {
+		if ( function_exists('wp_get_theme') ) {
+			$theme = wp_get_theme($theme_name);
+			if ( $theme->exists() ) {
+				$theme_ver = $theme->Version;
+			}
+		} else {
+			$theme_data = get_theme_data( get_theme_root() . '/' . $theme_name . '/style.css' );
+			$theme_ver  = $theme_data['Version'];
+		}
+		return $theme_ver;
+	}
 
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
-if ( ! isset( $content_width ) ) {
-	$content_width = 640; /* pixels */
-}
+	if ( ! isset( $content_width ) ) {
+		$content_width = 640; /* pixels */
+	}
 
 if ( ! function_exists( 'bluehiveframework_setup' ) ) :
 /**
