@@ -316,17 +316,10 @@ big {
   *zoom: 1;
 }
 
-#row1 div, #row2 div, #row3 div, #row4 div, #row5 div, #row6 div {
+.row div {
   float: left;
   margin-right: -100%;
   width: 100%;
-}
-#row1 div:nth-child(1n+1), #row2 div:nth-child(1n+1), #row3 div:nth-child(1n+1), #row4 div:nth-child(1n+1), #row5 div:nth-child(1n+1), #row6 div:nth-child(1n+1) {
-  margin-left: 0%;
-  margin-bottom: 2%;
-  clear: both;
-  overflow: hidden;
-  *zoom: 1;
 }
 
 @media all and (min-width: 960px) {
@@ -335,6 +328,12 @@ big {
     margin: 0 1%;
     overflow: hidden;
     *zoom: 1;
+  }
+
+  .row div {
+    float: left;
+    margin-right: -100%;
+    width: 100%;
   }
 }
 /*--------------------------------------------------------------

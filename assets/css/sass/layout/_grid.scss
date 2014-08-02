@@ -14,9 +14,8 @@ $max_width: 2000px;
 	@include clearfix();
 }
 
-#row1, #row2, #row3, #row4, #row5, #row6{
+.row{
 	div{@include column(12);}
-	@include generate_grid_positions(div, 12);
 }
 
 ///////////////////
@@ -32,5 +31,8 @@ $max_width: 2000px;
 	.container{
 		@include container();
 		@include clearfix();
+	}
+	.row{
+		div{@include column(12);}
 	}
 }
