@@ -1,0 +1,36 @@
+@import "vendors/profound_grid/grid";
+
+///////////////////
+// LAYOUT < 720  //
+///////////////////
+
+$total_width: 100%;
+$container_margin: 1%;
+$gutter_width: 2%;
+$max_width: 2000px;
+
+.container{
+	@include container();
+	@include clearfix();
+}
+
+#row1, #row2, #row3, #row4, #row5, #row6{
+	div{@include column(12);}
+	@include generate_grid_positions(div, 12);
+}
+
+///////////////////
+// LAYOUT > 960  //
+///////////////////
+
+@media all and (min-width: 960px) {
+	$total_width: 100%;
+	$container_margin: 1%;
+	$gutter_width: 2%;
+	$max_width: 2000px;
+
+	.container{
+		@include container();
+		@include clearfix();
+	}
+}
