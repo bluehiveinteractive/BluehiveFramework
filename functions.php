@@ -195,7 +195,7 @@ add_action( 'widgets_init', 'bluehiveframework_widgets_init' );
 function bluehiveframework_scripts() {
 	wp_enqueue_style( 'bluehiveframework-style', get_stylesheet_uri() );
 
-	wp_enqueue_style( 'bluehiveframework-styles', get_stylesheet_uri() . '/assets/css/build/style.min.css' );
+	wp_enqueue_style( 'bluehiveframework-styles', get_template_directory_uri() . '/assets/css/build/style.min.css' );
 
 	wp_enqueue_script( 'bluehiveframework-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
