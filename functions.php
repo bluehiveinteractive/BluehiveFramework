@@ -80,6 +80,32 @@
 		return $theme_ver;
 	}
 
+
+/**
+*
+* Let's Include the Meat of the Functions
+*
+**/
+
+//Loading jQuery and Scripts
+	include_once (PARENT_DIR . '/inc/theme-scripts.php');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
