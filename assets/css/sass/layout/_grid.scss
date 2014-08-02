@@ -14,7 +14,7 @@ $max_width: 2000px;
 	@include clearfix();
 }
 
-.row{
+.site-header-inner{
 	div{@include column(12);}
 }
 
@@ -32,7 +32,7 @@ $max_width: 2000px;
 		@include container();
 		@include clearfix();
 	}
-	.row{
+	.site-header-inner{
 		div{@include column(12);}
 	}
 }

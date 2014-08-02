@@ -316,7 +316,7 @@ big {
   *zoom: 1;
 }
 
-.row div {
+.site-header-inner div {
   float: left;
   margin-right: -100%;
   width: 100%;
@@ -330,7 +330,7 @@ big {
     *zoom: 1;
   }
 
-  .row div {
+  .site-header-inner div {
     float: left;
     margin-right: -100%;
     width: 100%;
