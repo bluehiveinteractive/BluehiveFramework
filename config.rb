@@ -15,9 +15,12 @@ javascripts_dir = "assets/js/build"
 output_style = :expanded
 environment = :development
 
-config.assets.debug = true
-config.sass.debug_info = true
-config.sass.line_comments = false # source maps don't get output if this is true
+#debug
+#sass_options = {:debug_info => true}
+
+#sourcemaps
+sass_options = {:sourcemap => true}
+enable_sourcemaps = true
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true

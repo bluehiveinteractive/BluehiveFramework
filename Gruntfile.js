@@ -38,7 +38,8 @@ module.exports = function(grunt) {
                   cwd: 'assets/css/sass',
                   src: ['**/*.scss'],
                   dest: 'assets/css/build',
-                  ext: '.css'
+                  ext: '.css',
+                  'assets/css/build/style.min.css': 'sass/style.scss'
                 }]
             }
         },
