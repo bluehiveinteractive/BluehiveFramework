@@ -27,11 +27,17 @@ $max_width: 2000px;
 	$container_margin: auto;
 	$gutter_width: 20px;
 
-	$color_yellow: #fff200;
-	$color_nearlyblack: #252525;
-	$color_nearlynearlyblack: #454545;
-	$color_body: #636363;
-	$color_headlines: #b7b7b7;
-
 	$max_width: 960px;
+}
+
+///////////////////
+// LAYOUT > 1170  //
+///////////////////
+
+@media all and (min-width: 1170px) {
+	$total_width: 1170px;
+	$container_margin: auto;
+	$gutter_width: 20px;
+
+	$max_width: 1170px;
 }

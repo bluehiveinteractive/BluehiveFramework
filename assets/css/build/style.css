@@ -373,14 +373,14 @@ big {
 --------------------------------------------------------------*/
 .site-header {
   background: pink;
-  width: 960px;
+  width: 1170px;
   margin: 0 auto;
 }
 .site-header .inner {
   background: goldenrod;
   float: left;
   margin-right: -100%;
-  width: 960px;
+  width: 1170px;
 }
 
 /*--------------------------------------------------------------
