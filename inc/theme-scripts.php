@@ -44,7 +44,7 @@ function bluehive_scripts() {
 		// 		wp_enqueue_script('camera');
 		// 		break;
 		// }
-		
+
 		// only Portfolio (2-*, 3-*, 4-Columns), Home and Front Pages
 		if ( (is_page_template('page-Portfolio2Cols-filterable.php')) 
 			|| (is_page_template('page-Portfolio3Cols-filterable.php')) 
