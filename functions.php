@@ -197,6 +197,12 @@ function bluehiveframework_scripts() {
 
 	wp_enqueue_style( 'bluehiveframework-styles', get_template_directory_uri() . '/assets/css/build/style.min.css' );
 
+	//Content Sidebar
+		if ( is_page_template('page-contentSidebar.php')) {
+			wp_register_style('content-sidebar', PARENT_URL.'/assets/build/layout/content-sidebar.css', false, '1.0.0', 'all');
+			wp_enqueue_style('content-sidebar');
+		}
+
 	wp_enqueue_script( 'bluehiveframework-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'bluehiveframework-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
