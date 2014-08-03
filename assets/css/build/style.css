@@ -341,13 +341,13 @@ big {
     float: left;
     margin-right: -100%;
     width: 872.5px;
+    margin-left: 297.5px;
   }
 
   #secondary {
     float: left;
     margin-right: -100%;
     width: 277.5px;
-    margin-left: 297.5px;
   }
 }
 /*--------------------------------------------------------------
