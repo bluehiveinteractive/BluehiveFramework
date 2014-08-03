@@ -69,6 +69,7 @@
 }
 @media all and (min-width: 1170px) {
   .content-area {
+    margin-left: 0;
     float: left;
     margin-right: -100%;
     width: 872.5px;
@@ -78,7 +79,7 @@
     float: left;
     margin-right: -100%;
     width: 277.5px;
-    margin-left: 991.66667px;
+    margin-left: 892.5px;
   }
 }
 
