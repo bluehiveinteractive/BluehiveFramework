@@ -32,18 +32,19 @@ function bluehive_scripts() {
 		wp_enqueue_script('jplayer');
 		wp_enqueue_script('custom');
 
-		switch (of_get_option('slider_type')) {
-			case 'none_slider':
-				break;
-			case 'accordion_slider':
-				wp_register_script('zaccordion', PARENT_URL.'/js/jquery.zaccordion.min.js', array('jquery'), '2.1.0', true);
-				wp_enqueue_script('zaccordion');
-				break;
-			default:
-				wp_register_script('camera', PARENT_URL.'/js/camera.min.js', array('jquery'), '1.3.4', true);
-				wp_enqueue_script('camera');
-				break;
-		}
+		// switch (of_get_option('slider_type')) {
+		// 	case 'none_slider':
+		// 		break;
+		// 	case 'accordion_slider':
+		// 		wp_register_script('zaccordion', PARENT_URL.'/js/jquery.zaccordion.min.js', array('jquery'), '2.1.0', true);
+		// 		wp_enqueue_script('zaccordion');
+		// 		break;
+		// 	default:
+		// 		wp_register_script('camera', PARENT_URL.'/js/camera.min.js', array('jquery'), '1.3.4', true);
+		// 		wp_enqueue_script('camera');
+		// 		break;
+		// }
+		
 		// only Portfolio (2-*, 3-*, 4-Columns), Home and Front Pages
 		if ( (is_page_template('page-Portfolio2Cols-filterable.php')) 
 			|| (is_page_template('page-Portfolio3Cols-filterable.php')) 
@@ -57,14 +58,16 @@ function bluehive_scripts() {
 			wp_enqueue_script('ba-resize');
 			wp_enqueue_script('isotope');
 		}
+
 		// only child theme's where overwrite flickr widget
-		if ( (CURRENT_THEME!='cherry') && (file_exists(CHILD_DIR. '/includes/widgets/my-flickr-widget.php')) ) {
-			wp_register_script('prettyPhoto', PARENT_URL.'/js/jquery.prettyPhoto.js', array('jquery'), '3.1.5');
-			wp_enqueue_script('prettyPhoto');
-		}
+		// if ( (CURRENT_THEME!='cherry') && (file_exists(CHILD_DIR. '/includes/widgets/my-flickr-widget.php')) ) {
+		// 	wp_register_script('prettyPhoto', PARENT_URL.'/js/jquery.prettyPhoto.js', array('jquery'), '3.1.5');
+		// 	wp_enqueue_script('prettyPhoto');
+		// }
+
 		// Bootstrap Scripts
-		wp_register_script('bootstrap', PARENT_URL.'/bootstrap/js/bootstrap.min.js', array('jquery'), '2.3.0');
-		wp_enqueue_script('bootstrap');
+		// wp_register_script('bootstrap', PARENT_URL.'/bootstrap/js/bootstrap.min.js', array('jquery'), '2.3.0');
+		// wp_enqueue_script('bootstrap');
 	}
 }
 add_action('wp_enqueue_scripts', 'bluehive_scripts');
