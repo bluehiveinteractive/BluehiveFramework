@@ -23,16 +23,15 @@ $max_width: 2000px;
 ///////////////////
 
 @media all and (min-width: 960px) {
-	$total_width: 100%;
-	$container_margin: 1%;
-	$gutter_width: 2%;
-	$max_width: 2000px;
+	$total_width: 960px;
+	$container_margin: auto;
+	$gutter_width: 20px;
 
-	.container{
-		@include container();
-		@include clearfix();
-	}
-	.site-header-inner{
-		div{@include column(12);}
-	}
+	$color_yellow: #fff200;
+	$color_nearlyblack: #252525;
+	$color_nearlynearlyblack: #454545;
+	$color_body: #636363;
+	$color_headlines: #b7b7b7;
+
+	$max_width: 960px;
 }

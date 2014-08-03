@@ -322,20 +322,6 @@ big {
   width: 100%;
 }
 
-@media all and (min-width: 960px) {
-  .container {
-    width: 98%;
-    margin: 0 1%;
-    overflow: hidden;
-    *zoom: 1;
-  }
-
-  .site-header-inner div {
-    float: left;
-    margin-right: -100%;
-    width: 100%;
-  }
-}
 /*--------------------------------------------------------------
 3.2 Alignments & Clearings
 --------------------------------------------------------------*/
@@ -387,14 +373,14 @@ big {
 --------------------------------------------------------------*/
 .site-header {
   background: pink;
-  width: 98%;
-  margin: 0 1%;
+  width: 960px;
+  margin: 0 auto;
 }
 .site-header .inner {
   background: goldenrod;
   float: left;
   margin-right: -100%;
-  width: 100%;
+  width: 960px;
 }
 
 /*--------------------------------------------------------------
