@@ -17,4 +17,4 @@ function bluehive_layouts() {
 		}
 	}
 }
-//add_action('wp_enqueue_scripts', 'bluehive_layouts');
+add_action('wp_enqueue_scripts', 'bluehive_layouts');
