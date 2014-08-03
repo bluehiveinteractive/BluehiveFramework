@@ -1,4 +1,4 @@
-
+//Default Layout - Sidebar -> Content
 @media all and (min-width: 1170px) {
 	$total_width: 1170px;
 	$container_margin: auto;
@@ -11,6 +11,6 @@
 	}
 	#secondary {
 		@include column(3);
-		@include push(9);
+		@include push(3);
 	}
 }
