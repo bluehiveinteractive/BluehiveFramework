@@ -75,6 +75,6 @@
 	}
 	#secondary {
 		@include column(3);
-		@include push(9);
+		@include push(10);
 	}
 }
