@@ -70,11 +70,20 @@
 
 	$max_width: 1170px;
 
+	// .content-area {
+	// 	@include column(9);
+	// 	@include push(3);
+	// }
+	// #secondary {
+	// 	@include column(3);
+	// }
+
 	.content-area {
 		@include column(9);
-		@include push(3);
+		
 	}
 	#secondary {
 		@include column(3);
+		@include push(9);
 	}
 }
