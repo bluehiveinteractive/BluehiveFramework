@@ -1,37 +1,21 @@
-@import "../vendors/profound_grid/grid";
+@import "vendors/profound_grid/grid";
 
 ///////////////////
-// Mobile 320    //
+// LAYOUT < 720  //
 ///////////////////
-	$total_width: 100%;
-	$container_margin: 1%;
-	$gutter_width: 2%;
-	$max_width: 2000px;
 
-	.content-area {
-		@include column(12);
-	}
-	#secondary {
-		@include column(12);
-	}
+$total_width: 100%;
+$container_margin: 1%;
+$gutter_width: 2%;
+$max_width: 2000px;
 
-///////////////////
-// LAYOUT > 768  //
-///////////////////
-@media all and (min-width: 768px) {
-	$total_width: 768px;
-	$container_margin: auto;
-	$gutter_width: 20px;
+.container{
+	@include container();
+	@include clearfix();
+}
 
-	$max_width: 768px;
-
-	.content-area {
-		@include column(9);
-		@include push(3);
-	}
-	#secondary {
-		@include column(3);
-	}
+.site-header-inner{
+	div{@include column(12);}
 }
 
 ///////////////////
@@ -39,19 +23,11 @@
 ///////////////////
 
 @media all and (min-width: 960px) {
-	$total_width:960px;
+	$total_width: 960px;
 	$container_margin: auto;
 	$gutter_width: 20px;
 
 	$max_width: 960px;
-
-	.content-area {
-		@include column(9);
-		@include push(3);
-	}
-	#secondary {
-		@include column(3);
-	}
 }
 
 ///////////////////
@@ -59,17 +35,17 @@
 ///////////////////
 
 @media all and (min-width: 1170px) {
-	$total_width:1170px;
+	$total_width: 1170px;
 	$container_margin: auto;
 	$gutter_width: 20px;
 
 	$max_width: 1170px;
 
-	.content-area {
-		@include column(9);
-		@include push(3);
+	.container{
+		@include container();
+		@include clearfix();
 	}
-	#secondary {
-		@include column(3);
+	.inner{
+		@include column(12);
 	}
 }
