@@ -90,15 +90,6 @@
 //Loading jQuery and Scripts
 	include_once (PARENT_DIR . '/inc/theme-scripts.php');
 
-//Loading Layout Styles
-	include_once (PARENT_DIR . '/inc/theme-layouts.php');
-
-
-
-
-
-
-
 
 
 
@@ -208,6 +199,9 @@ function bluehiveframework_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'bluehiveframework_scripts' );
+
+//Loading Layout Styles
+	include_once (PARENT_DIR . '/inc/template-layouts.php');
 
 /**
  * Implement the Custom Header feature.
