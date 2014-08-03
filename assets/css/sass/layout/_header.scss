@@ -1,8 +1,6 @@
 .site-header {
 	background: pink;
-	@include container();
 	.inner {
 		background: goldenrod;
-		@include column(12);
 	}
 }
