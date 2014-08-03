@@ -1,0 +1,79 @@
+@import "../vendors/profound_grid/grid";
+///////////////////
+// Mobile 320    //
+///////////////////
+	$total_width: 100%;
+	$container_margin: 1%;
+	$gutter_width: 2%;
+	$max_width: 2000px;
+
+	.container{
+		@include container();
+		@include clearfix();
+	}
+
+	.content-area {
+		@include column(12);
+	}
+	#secondary {
+		@include column(12);
+	}
+
+///////////////////
+// LAYOUT > 768  //
+///////////////////
+@media all and (min-width: 768px) {
+	$total_width: 768px;
+	$container_margin: auto;
+	$gutter_width: 20px;
+
+	$max_width: 768px;
+
+	.content-area {
+		@include column(9);
+	}
+	#secondary {
+		@include column(3);
+		@include push(9);
+	}
+}
+
+///////////////////
+// LAYOUT > 960  //
+///////////////////
+
+@media all and (min-width: 960px) {
+	$total_width:960px;
+	$container_margin: auto;
+	$gutter_width: 20px;
+
+	$max_width: 960px;
+
+	.content-area {
+		@include column(9);
+	}
+	#secondary {
+		@include column(3);
+		@include push(9);
+	}
+}
+
+///////////////////
+// LAYOUT > 1170  //
+///////////////////
+
+@media all and (min-width: 1170px) {
+	$total_width:1170px;
+	$container_margin: auto;
+	$gutter_width: 20px;
+
+	$max_width: 1170px;
+
+	.content-area {
+		@include column(9);
+	}
+	#secondary {
+		@include column(3);
+		@include push(9);
+	}
+}
