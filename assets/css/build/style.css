@@ -82,7 +82,9 @@ html {
 *:before,
 *:after {
   /* apply a natural box layout model to all elements; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+  -webkit-box-sizing: border-box;
   /* Not needed for modern webkit but still used by Blackberry Browser 7.0; see http://caniuse.com/#search=box-sizing */
+  -moz-box-sizing: border-box;
   /* Still needed for Firefox 28; see http://caniuse.com/#search=box-sizing */
   box-sizing: border-box;
 }
@@ -289,21 +291,6 @@ big {
  * @url http://www.profoundgrid.com
  * @url http://www.weareprofound.com 
  */
-/**
- * Clearfix
- */
-/**
- * Legacy Clearfix
- */
-/**
- * Establish the grid-containing element.
- */
-/**
- * Align an element to the grid.
- */
-/**
- * Apply to any column to make it the last one of the current row.
- */
 /*--------------------------------------------------------------
 3.0 Layout
 --------------------------------------------------------------*/
@@ -331,21 +318,6 @@ big {
  * @author Profound Creative Studio
  * @url http://www.profoundgrid.com
  * @url http://www.weareprofound.com 
- */
-/**
- * Clearfix
- */
-/**
- * Legacy Clearfix
- */
-/**
- * Establish the grid-containing element.
- */
-/**
- * Align an element to the grid.
- */
-/**
- * Apply to any column to make it the last one of the current row.
  */
 .container {
   width: 98%;
@@ -706,7 +678,9 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* Addresses appearance set to searchfield in S5, Chrome */
+  -webkit-box-sizing: content-box;
   /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+  -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
 

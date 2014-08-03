@@ -75,17 +75,13 @@ $class_push:		'push';		//				//
 // BASIC MIXINS
 ////////////////////////////////////////////////////////////////////////////////
 
-/**
- * Clearfix
- */
+//Clearfix
 @mixin clearfix(){
 	overflow: hidden;
 	*zoom: 1;
 }
 
-/**
- * Legacy Clearfix
- */
+//Legacy Clearfix
 @mixin legacy-pie-clearfix(){
 	*zoom: 1;
 
@@ -99,17 +95,14 @@ $class_push:		'push';		//				//
 	}
 }
 
-/**
- * Establish the grid-containing element.
- */
+//Establish the grid-containing element.
 @mixin container(){
 	width: container_width(); 
 	margin: 0 $container_margin;
 }
 
-/**
- * Align an element to the grid.
- */
+
+//Align an element to the grid.
 @mixin column($_columns_width, $_padding_columns:null){
 	float: left; 
 	margin-right: -100%;
@@ -121,9 +114,7 @@ $class_push:		'push';		//				//
     }
 }
 
-/**
- * Apply to any column to make it the last one of the current row.
- */
+//Apply to any column to make it the last one of the current row.
 @mixin column_omega(){
 	
 }

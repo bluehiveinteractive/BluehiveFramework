@@ -1,4 +1,4 @@
-@import "../vendors/profound_grid/grid";
+@extends "../vendors/profound_grid/grid";
 @media all and (min-width: 1170px) {
 	$total_width: 1170px;
 	$container_margin: auto;
