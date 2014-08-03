@@ -8,11 +8,11 @@ function bluehive_layouts() {
 		// Sidebar Content
 		if ( is_page_template('page-sidebarContent.php')) {
 			wp_register_style('sidebar-content', PARENT_URL.'/assets/build/layout/sidebar-content.css', array(), '1.0.0');
-			wp_enqueue_script('sidebar-content');
+			wp_enqueue_style('sidebar-content');
 		}
 		if ( is_page_template('page-contentSidebar.php')) {
 			wp_register_style('content-sidebar', PARENT_URL.'/assets/build/layout/content-sidebar.css', array(), '1.0.0');
-			wp_enqueue_script('content-sidebar');
+			wp_enqueue_style('content-sidebar');
 		}
 	}
 }
