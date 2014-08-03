@@ -7,7 +7,7 @@
 */
 
 get_header(); ?>
-
+<div class="row">
 <?php get_sidebar(); ?>
 
 	<div id="primary" class="content-area">
@@ -28,5 +28,5 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+</div>
 <?php get_footer(); ?>
