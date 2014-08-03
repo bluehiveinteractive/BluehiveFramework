@@ -317,6 +317,18 @@ big {
  * @url http://www.profoundgrid.com
  * @url http://www.weareprofound.com 
  */
+.content-area {
+  float: left;
+  margin-right: -100%;
+  width: 100%;
+}
+
+#secondary {
+  float: left;
+  margin-right: -100%;
+  width: 100%;
+}
+
 @media all and (min-width: 768px) {
   .content-area {
     float: left;

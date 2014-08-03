@@ -3,17 +3,17 @@
 ///////////////////
 // Mobile 320    //
 ///////////////////
-	// $total_width: 100%;
-	// $container_margin: 1%;
-	// $gutter_width: 2%;
-	// $max_width: 2000px;
+	$total_width: 100%;
+	$container_margin: 1%;
+	$gutter_width: 2%;
+	$max_width: 2000px;
 
-	// .content-area {
-	// 	@include column(12);
-	// }
-	// #secondary {
-	// 	@include column(12);
-	// }
+	.content-area {
+		@include column(12);
+	}
+	#secondary {
+		@include column(12);
+	}
 
 ///////////////////
 // LAYOUT > 768  //
