@@ -67,4 +67,4 @@ function bluehive_scripts() {
 		wp_enqueue_script('bootstrap');
 	}
 }
-add_action('wp_enqueue_scripts', 'cherry_scripts');
+add_action('wp_enqueue_scripts', 'bluehive_scripts');
