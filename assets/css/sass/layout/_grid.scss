@@ -40,4 +40,12 @@ $max_width: 2000px;
 	$gutter_width: 20px;
 
 	$max_width: 1170px;
+
+	.container{
+		@include container();
+		@include clearfix();
+	}
+	.inner{
+		@include column(12);
+	}
 }

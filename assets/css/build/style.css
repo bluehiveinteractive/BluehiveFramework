@@ -322,6 +322,20 @@ big {
   width: 100%;
 }
 
+@media all and (min-width: 1170px) {
+  .container {
+    width: 1170px;
+    margin: 0 auto;
+    overflow: hidden;
+    *zoom: 1;
+  }
+
+  .inner {
+    float: left;
+    margin-right: -100%;
+    width: 1170px;
+  }
+}
 /*--------------------------------------------------------------
 3.2 Alignments & Clearings
 --------------------------------------------------------------*/
