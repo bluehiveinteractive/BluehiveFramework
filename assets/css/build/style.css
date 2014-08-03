@@ -371,20 +371,6 @@ big {
     width: 277.5px;
   }
 }
-@media all and (min-width: 1170px) {
-  .content-area {
-    float: left;
-    margin-right: -100%;
-    width: 872.5px;
-    margin-left: 297.5px;
-  }
-
-  #secondary {
-    float: left;
-    margin-right: -100%;
-    width: 277.5px;
-  }
-}
 /*--------------------------------------------------------------
 3.2 Alignments & Clearings
 --------------------------------------------------------------*/
