@@ -20,21 +20,20 @@
  * @url http://www.profoundgrid.com
  * @url http://www.weareprofound.com 
  */
-/**
- * Clearfix
- */
-/**
- * Legacy Clearfix
- */
-/**
- * Establish the grid-containing element.
- */
-/**
- * Align an element to the grid.
- */
-/**
- * Apply to any column to make it the last one of the current row.
- */
+@media all and (min-width: 960px) {
+  .content-area {
+    float: left;
+    margin-right: -100%;
+    width: 715px;
+  }
+
+  #secondary {
+    float: left;
+    margin-right: -100%;
+    width: 225px;
+    margin-left: 735px;
+  }
+}
 @media all and (min-width: 1170px) {
   .content-area {
     float: left;

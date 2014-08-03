@@ -82,9 +82,7 @@ html {
 *:before,
 *:after {
   /* apply a natural box layout model to all elements; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
-  -webkit-box-sizing: border-box;
   /* Not needed for modern webkit but still used by Blackberry Browser 7.0; see http://caniuse.com/#search=box-sizing */
-  -moz-box-sizing: border-box;
   /* Still needed for Firefox 28; see http://caniuse.com/#search=box-sizing */
   box-sizing: border-box;
 }
@@ -297,53 +295,58 @@ big {
 /*--------------------------------------------------------------
 3.1 Grid
 --------------------------------------------------------------*/
-/**
- * Profound Grid
- * 
- * Built in Sass (SCSS) this responsive/adaptive grid supports both fixed and fluid layouts, 
- * relative and fixed gutters, as well as your choice of semantic markup or generic '.grid-x' classes.
- * 
- * The biggest difference to other grid systems is the use of negative margins for column
- * placements, avoiding the subpixel rounding issues that usually break/uglify fluid layouts
- * in some browsers.
- * 
- * Nested columns are supported too, without having to reset the grid on each level. 
- *
- * Credits/Inspiration:
- * -------------------
- * Semantic Grid: http://www.semantic.gs
- * Susy: http://susy.oddbird.net
- * Negative Grid: http://chrisplaneta.com/freebies/negativegrid-fluid-css-grid-by-chris-planeta/
- *
- * @author Profound Creative Studio
- * @url http://www.profoundgrid.com
- * @url http://www.weareprofound.com 
- */
-.container {
-  width: 98%;
-  margin: 0 1%;
-  overflow: hidden;
-  *zoom: 1;
-}
-
-.site-header-inner div {
+.content-area {
   float: left;
   margin-right: -100%;
   width: 100%;
 }
 
-@media all and (min-width: 1170px) {
-  .container {
-    width: 1170px;
-    margin: 0 auto;
-    overflow: hidden;
-    *zoom: 1;
-  }
+#secondary {
+  float: left;
+  margin-right: -100%;
+  width: 100%;
+}
 
-  .inner {
+@media all and (min-width: 768px) {
+  .content-area {
     float: left;
     margin-right: -100%;
-    width: 1170px;
+    width: 571px;
+    margin-left: 197px;
+  }
+
+  #secondary {
+    float: left;
+    margin-right: -100%;
+    width: 177px;
+  }
+}
+@media all and (min-width: 960px) {
+  .content-area {
+    float: left;
+    margin-right: -100%;
+    width: 715px;
+    margin-left: 245px;
+  }
+
+  #secondary {
+    float: left;
+    margin-right: -100%;
+    width: 225px;
+  }
+}
+@media all and (min-width: 1170px) {
+  .content-area {
+    float: left;
+    margin-right: -100%;
+    width: 872.5px;
+    margin-left: 297.5px;
+  }
+
+  #secondary {
+    float: left;
+    margin-right: -100%;
+    width: 277.5px;
   }
 }
 @media all and (min-width: 1170px) {
@@ -678,9 +681,7 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* Addresses appearance set to searchfield in S5, Chrome */
-  -webkit-box-sizing: content-box;
   /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
 

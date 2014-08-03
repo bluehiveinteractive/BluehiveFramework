@@ -1,4 +1,19 @@
-@extends "../vendors/profound_grid/grid";
+@import "../vendors/profound_grid/grid";
+@media all and (min-width: 960px) {
+	$total_width: 960px;
+	$container_margin: auto;
+	$gutter_width: 20px;
+
+	$max_width: 960px;
+
+	.content-area {
+		@include column(9);
+	}
+	#secondary {
+		@include column(3);
+		@include push(9);
+	}
+}
 @media all and (min-width: 1170px) {
 	$total_width: 1170px;
 	$container_margin: auto;
