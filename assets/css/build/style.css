@@ -266,12 +266,7 @@ big {
   /* Above WP toolbar */
 }
 
-/*--------------------------------------------------------------
-3.0 Layout
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-3.1 Grid
---------------------------------------------------------------*/
+/* Vendor Dependencies */
 /**
  * Profound Grid
  * 
@@ -309,33 +304,12 @@ big {
 /**
  * Apply to any column to make it the last one of the current row.
  */
-.container {
-  width: 98%;
-  margin: 0 1%;
-  overflow: hidden;
-  *zoom: 1;
-}
-
-.site-header-inner div {
-  float: left;
-  margin-right: -100%;
-  width: 100%;
-}
-
-@media all and (min-width: 1170px) {
-  .container {
-    width: 1170px;
-    margin: 0 auto;
-    overflow: hidden;
-    *zoom: 1;
-  }
-
-  .inner {
-    float: left;
-    margin-right: -100%;
-    width: 1170px;
-  }
-}
+/*--------------------------------------------------------------
+3.0 Layout
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+3.1 Grid
+--------------------------------------------------------------*/
 @media all and (min-width: 1170px) {
   .content-area {
     float: left;
