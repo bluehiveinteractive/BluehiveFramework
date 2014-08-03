@@ -58,13 +58,13 @@
     float: left;
     margin-right: -100%;
     width: 715px;
-    margin-left: 245px;
   }
 
   #secondary {
     float: left;
     margin-right: -100%;
     width: 225px;
+    margin-left: 735px;
   }
 }
 @media all and (min-width: 1170px) {
