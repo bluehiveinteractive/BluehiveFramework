@@ -74,6 +74,7 @@
 		@include clearfix();
 	}
 	.content-area {
+		margin-left: 0;
 		@include column(9);
 		background-color: red;
 		
