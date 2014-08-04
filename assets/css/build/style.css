@@ -334,6 +334,8 @@ big {
   float: left;
   margin-right: -100%;
   width: 100%;
+  overflow: hidden;
+  *zoom: 1;
 }
 
 @media all and (min-width: 768px) {
