@@ -68,10 +68,18 @@
   }
 }
 @media all and (min-width: 1170px) {
+  .container {
+    width: 1170px;
+    margin: 0 auto;
+    overflow: hidden;
+    *zoom: 1;
+  }
+
   .content-area {
     float: left;
     margin-right: -100%;
     width: 872.5px;
+    background-color: red;
   }
 
   #secondary {
@@ -79,6 +87,7 @@
     margin-right: -100%;
     width: 277.5px;
     margin-left: 793.33333px;
+    background-color: violet;
   }
 }
 

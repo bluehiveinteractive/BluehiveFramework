@@ -69,12 +69,18 @@
 
 	$max_width: 1170px;
 
+	.container{
+		@include container();
+		@include clearfix();
+	}
 	.content-area {
 		@include column(9);
+		background-color: red;
 		
 	}
 	#secondary {
 		@include column(3);
 		@include push(8);
+		background-color: violet;
 	}
 }
