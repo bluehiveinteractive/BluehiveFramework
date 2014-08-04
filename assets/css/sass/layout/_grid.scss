@@ -70,10 +70,10 @@
 
 	$max_width: 1170px;
 
-	.container{
-		@include container();
-		@include clearfix();
-	}
+	// .container{
+	// 	@include container();
+	// 	@include clearfix();
+	// }
 	.content-area {
 		@include column(9);
 		@include push(3);
