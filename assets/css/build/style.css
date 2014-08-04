@@ -331,10 +331,10 @@ big {
 }
 
 #secondary {
+  clear: both;
   float: left;
   margin-right: -100%;
   width: 100%;
-  clear: both;
 }
 
 @media all and (min-width: 768px) {
@@ -353,6 +353,7 @@ big {
   }
 
   #secondary {
+    clear: none;
     float: left;
     margin-right: -100%;
     width: 177px;
