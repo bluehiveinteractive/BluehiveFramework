@@ -40,6 +40,13 @@
 }
 
 @media all and (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+    overflow: hidden;
+    *zoom: 1;
+  }
+
   .content-area {
     float: left;
     margin-right: -100%;
@@ -54,6 +61,13 @@
   }
 }
 @media all and (min-width: 960px) {
+  .container {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+    *zoom: 1;
+  }
+
   .content-area {
     float: left;
     margin-right: -100%;

@@ -5,7 +5,7 @@
 	$total_width: 100%;
 	$container_margin: 1%;
 	$gutter_width: 2%;
-	$max_width: 2000px;
+	$max_width: 320px;
 
 	.container{
 		@include container();
@@ -29,6 +29,10 @@
 
 	$max_width: 768px;
 
+	.container{
+		@include container();
+		@include clearfix();
+	}
 	.content-area {
 		@include column(9);
 	}
@@ -49,6 +53,10 @@
 
 	$max_width: 960px;
 
+	.container{
+		@include container();
+		@include clearfix();
+	}
 	.content-area {
 		@include column(9);
 	}
