@@ -3,7 +3,9 @@ module.exports = function(grunt) {
 
     // load all grunt tasks matching the `grunt-*` pattern
     require('load-grunt-tasks')(grunt);
-
+    
+    grunt.loadNpmTasks('grunt-contrib-compass');
+    
     grunt.initConfig({
 
         // watch for changes and trigger sass, jshint, uglify and livereload
@@ -26,23 +28,31 @@ module.exports = function(grunt) {
             }
         },
 
-        // sass
-        sass: {
+        compass: {
             dist: {
                 options: {
-                    sourcemap: true,
-                    style: 'expanded',
-                },
-                files: [{
-                  expand: true,
-                  cwd: 'assets/css/sass',
-                  src: ['**/*.scss'],
-                  dest: 'assets/css/build',
-                  ext: '.css',
-                  'assets/css/build/style.min.css': 'sass/style.scss'
-                }]
+                config: 'config.rb',  // css_dir = 'dev/css'
+                cssDir: 'assets/css/build'
+              }
             }
-        },
+        }
+        // sass
+        // sass: {
+        //     dist: {
+        //         options: {
+        //             sourcemap: true,
+        //             style: 'expanded',
+        //         },
+        //         files: [{
+        //           expand: true,
+        //           cwd: 'assets/css/sass',
+        //           src: ['**/*.scss'],
+        //           dest: 'assets/css/build',
+        //           ext: '.css',
+        //           'assets/css/build/style.min.css': 'sass/style.scss'
+        //         }]
+        //     }
+        // },
 
         // autoprefixer
         autoprefixer: {
